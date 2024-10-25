@@ -46,7 +46,7 @@ st.title("Credit Fraud Detection")
 
 input_df = input_features()
 
-model = pickle.load(open(r'/content/xgb_model.pkl', 'rb'))
+model = pickle.load(open(r'xgb_model.pkl', 'rb'))
 
 input_scaled = std_scaler.fit_transform(input_df)
 
